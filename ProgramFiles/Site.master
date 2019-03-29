@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="SiteMaster" Codebehind="Site.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <link href="Site.css" rel="stylesheet" type="text/css" runat="server" />
+    <title></title>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="main">
+            <div class="header">
+                <div class="Logo">
+                    <a href="Home.aspx"><img src="PFLogo.png" alt="Site Logo"/></a>
+                </div>
+            </div>
+
+            <div class="MenuWrapper">
+                <div class="MenuBar">
+                <asp:Menu ID="MenuGeneral" Orientation="Horizontal" runat="server" CssClass="menu_button_wrap">
+                    <StaticMenuItemStyle CssClass="menu_button_core" HorizontalPadding="20px" />
+                    <StaticMenuStyle CssClass="menu_placeholder" HorizontalPadding="10px" VerticalPadding="5px" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Search.aspx" Text="Search" Value="Search">
+                        </asp:MenuItem>   
+                        <asp:MenuItem NavigateUrl="~/AboutUs.aspx" Text="About Us" Value="AboutUs">
+                        </asp:MenuItem>                                         
+                    </Items>
+                
+                </asp:Menu>
+                </div>
+
+                <div class="MenuBar">
+                <asp:Menu ID="MenuVisitor" Orientation="Horizontal" runat="server" CssClass="menu_button_wrap">
+                    <StaticMenuItemStyle CssClass="menu_button_core" HorizontalPadding="20px" />
+                    <StaticMenuStyle CssClass="menu_placeholder" HorizontalPadding="10px" VerticalPadding="5px" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Log In" Value="Log In">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Register.aspx" Text="Register" Value="Register">
+                        </asp:MenuItem>
+                    </Items>
+              
+                </asp:Menu>
+                </div>
+
+                <div class="MenuBar">
+                <asp:Menu ID="MenuRegistered" Orientation="Horizontal" runat="server" CssClass="menu_button_wrap">
+                    <StaticMenuItemStyle CssClass="menu_button_core" HorizontalPadding="20px" />
+                    <StaticMenuStyle CssClass="menu_placeholder" HorizontalPadding="10px" VerticalPadding="5px" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/UserArea.aspx" Text="User Area" Value="User Area"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/ShoppingCart.aspx" Text="Shopping Cart" Value="Shopping Cart"></asp:MenuItem>
+                    </Items>
+              
+                </asp:Menu>
+                </div>
+
+                <div class="MenuBar">
+                <asp:Menu ID="MenuAdmin" Orientation="Horizontal" runat="server" CssClass="menu_button_wrap">
+                    <StaticMenuItemStyle CssClass="menu_button_core" HorizontalPadding="20px" />
+                    <StaticMenuStyle CssClass="menu_placeholder" HorizontalPadding="10px" VerticalPadding="5px" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Admin_Dashboard.aspx" Text="Administration" Value="Administration">
+                        </asp:MenuItem>
+                    </Items>
+              
+                </asp:Menu>
+                </div>
+            </div>
+
+
+            
+            <div class="content_wrapper">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+    
+    <div class="footer_wrapper">
+        <div class="footer_content_wrapper">
+            <div class="footer_core">
+                <p>
+                    © 2018 Feisal Abdurrahman</p>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

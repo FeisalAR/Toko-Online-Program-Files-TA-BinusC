@@ -1,0 +1,5 @@
+c:\users\acer\documents\visual studio 2010\Projects\ProgramFiles\ProgramFiles\bin\ProgramFiles.dll
+c:\users\acer\documents\visual studio 2010\Projects\ProgramFiles\ProgramFiles\bin\ProgramFiles.pdb
+c:\users\acer\documents\visual studio 2010\Projects\ProgramFiles\ProgramFiles\obj\Debug\ProgramFiles.dll
+c:\users\acer\documents\visual studio 2010\Projects\ProgramFiles\ProgramFiles\obj\Debug\ProgramFiles.pdb
+C:\Users\ACER\documents\visual studio 2010\Projects\ProgramFiles\ProgramFiles\obj\Debug\ProgramFiles.csprojResolveAssemblyReference.cache
